@@ -36,6 +36,11 @@ function findDog(element){
 			}
 			xml.open("GET", "https://api.petfinder.com/v2/animals?type=dog&breed=" + element, true);
   			xml.setRequestHeader("Authorization", "Bearer " + authkey);
+	xml.setRequestHeader("Access-Control-Allow-Headers", "Origin");
+	xml.setRequestHeader("Authorization", "Bearer " + authkey);
+	xml.setRequestHeader("Access-Control-Allow-Origin", "https://jellyhat.github.io/");
+    xml.setRequestHeader("Access-Control-Allow-Credentials", "true");
+    xml.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
 			xml.send(); 
 }
 
