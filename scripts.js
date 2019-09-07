@@ -70,7 +70,7 @@ function UserAction() {
   xhttp.setRequestHeader("Authorization", "Bearer " + authkey);
   xhttp.setRequestHeader("Access-Control-Allow-Headers", "*");
 	xhttp.setRequestHeader("Authorization", "Bearer " + authkey);
-	xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+	xhttp.setRequestHeader("Access-Control-Allow-Origin", 'https://jellyhat.github.io');
     xhttp.setRequestHeader("Access-Control-Allow-Credentials", "true");
     xhttp.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
   xhttp.send();
