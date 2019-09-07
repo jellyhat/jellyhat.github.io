@@ -68,9 +68,9 @@ function UserAction() {
   }	
   xhttp.open("GET", "https://api.petfinder.com/v2/types/dog/breeds", true);
   xhttp.setRequestHeader("Authorization", "Bearer " + authkey);
-  xhttp.setRequestHeader("Access-Control-Allow-Headers", "Origin");
+  xhttp.setRequestHeader("Access-Control-Allow-Headers", "*");
 	xhttp.setRequestHeader("Authorization", "Bearer " + authkey);
-	xhttp.setRequestHeader("Access-Control-Allow-Origin", "https://jellyhat.github.io/");
+	xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xhttp.setRequestHeader("Access-Control-Allow-Credentials", "true");
     xhttp.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
   xhttp.send();
